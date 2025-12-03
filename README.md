@@ -49,3 +49,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 3. Add actual social media links to the SocialSection cards
 4. Integrate Dexscreener or TradingView chart in ChartSection
 5. Update contract address in Navbar when available
+
