@@ -10,7 +10,7 @@ export default function Navbar() {
             <span 
               className="text-white text-2xl font-bold"
               style={{
-                textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(251, 191, 36, 0.5), 0 0 20px rgba(251, 191, 36, 0.3)',
+                textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
                 WebkitTextStroke: '1px #000',
                 paintOrder: 'stroke fill',
               }}
@@ -30,9 +30,10 @@ export default function Navbar() {
             href="https://pump.fun"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-cate-pink hover:bg-cate-purple text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cate-pink/50"
+            className="bg-cate-pink hover:bg-cate-purple text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-cate-pink/70 hover:shadow-xl relative overflow-hidden group"
           >
-            Buy Now
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+            <span className="relative z-10">Buy Now</span>
           </a>
         </div>
       </div>

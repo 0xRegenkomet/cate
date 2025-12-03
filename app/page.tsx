@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import MainSection from "@/components/MainSection";
+import Ticker from "@/components/Ticker";
 import SocialSection from "@/components/SocialSection";
 import ChartSection from "@/components/ChartSection";
 import Footer from "@/components/Footer";
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <MainSection />
+        <Ticker />
         <SocialSection />
         <ChartSection />
         <Footer />

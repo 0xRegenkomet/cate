@@ -13,15 +13,12 @@ export default function SocialSection() {
           <h2 
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white relative"
             style={{
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 15px rgba(59, 130, 246, 0.4), 0 0 30px rgba(59, 130, 246, 0.2)',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000',
               WebkitTextStroke: '2px #000',
               paintOrder: 'stroke fill',
             }}
           >
-            <span className="relative px-6 py-2 inline-block">
-              <span className="absolute inset-0 bg-cate-light-blue/5 rounded-lg blur-lg"></span>
-              <span className="relative">Join The Community</span>
-            </span>
+            Join The Community
           </h2>
         </div>
         
@@ -31,9 +28,11 @@ export default function SocialSection() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-8 md:p-10 hover:border-cate-pink/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cate-pink/20"
+            className="group bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-8 md:p-10 hover:border-cate-pink/50 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cate-pink/30 hover:shadow-cyan-500/20 relative overflow-hidden"
           >
-            <div className="flex flex-col items-center text-center">
+            {/* Animated gradient background on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-cate-pink/0 via-cate-purple/0 to-cate-blue/0 group-hover:from-cate-pink/10 group-hover:via-cate-purple/10 group-hover:to-cate-blue/10 transition-all duration-500 rounded-2xl"></div>
+            <div className="flex flex-col items-center text-center relative z-10">
               <div className="w-20 h-20 md:w-24 md:h-24 mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                 {/* X/Twitter Icon */}
                 <svg
@@ -47,7 +46,7 @@ export default function SocialSection() {
               <h3 
                 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3"
                 style={{
-                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(59, 130, 246, 0.3)',
+                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
                   WebkitTextStroke: '1px #000',
                   paintOrder: 'stroke fill',
                 }}
@@ -70,9 +69,11 @@ export default function SocialSection() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-8 md:p-10 hover:border-cate-pink/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cate-pink/20"
+            className="group bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-8 md:p-10 hover:border-cate-pink/50 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cate-pink/30 hover:shadow-cyan-500/20 relative overflow-hidden"
           >
-            <div className="flex flex-col items-center text-center">
+            {/* Animated gradient background on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-cate-pink/0 via-cate-purple/0 to-cate-blue/0 group-hover:from-cate-pink/10 group-hover:via-cate-purple/10 group-hover:to-cate-blue/10 transition-all duration-500 rounded-2xl"></div>
+            <div className="flex flex-col items-center text-center relative z-10">
               <div className="w-20 h-20 md:w-24 md:h-24 mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                 {/* X/Twitter Icon */}
                 <svg
@@ -86,7 +87,7 @@ export default function SocialSection() {
               <h3 
                 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3"
                 style={{
-                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(59, 130, 246, 0.3)',
+                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
                   WebkitTextStroke: '1px #000',
                   paintOrder: 'stroke fill',
                 }}
@@ -109,9 +110,11 @@ export default function SocialSection() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-8 md:p-10 hover:border-cate-pink/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cate-pink/20"
+            className="group bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-8 md:p-10 hover:border-cate-pink/50 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-cate-pink/30 hover:shadow-cyan-500/20 relative overflow-hidden"
           >
-            <div className="flex flex-col items-center text-center">
+            {/* Animated gradient background on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-cate-pink/0 via-cate-purple/0 to-cate-blue/0 group-hover:from-cate-pink/10 group-hover:via-cate-purple/10 group-hover:to-cate-blue/10 transition-all duration-500 rounded-2xl"></div>
+            <div className="flex flex-col items-center text-center relative z-10">
               <div className="w-20 h-20 md:w-24 md:h-24 mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center relative">
                 <Image
                   src="/Pictures/dex-screener-logo-png_seeklogo-527276.png"
@@ -123,7 +126,7 @@ export default function SocialSection() {
               <h3 
                 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3"
                 style={{
-                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(59, 130, 246, 0.3)',
+                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
                   WebkitTextStroke: '1px #000',
                   paintOrder: 'stroke fill',
                 }}

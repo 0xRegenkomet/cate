@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Fredoka } from "next/font/google";
+import { Fredoka, Kalam } from "next/font/google";
 import "./globals.css";
 
 const fredoka = Fredoka({ 
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-fredoka",
+});
+
+const kalam = Kalam({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-kalam",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fredoka.className}>{children}</body>
+      <body className={`${fredoka.variable} ${kalam.variable} ${fredoka.className}`}>{children}</body>
     </html>
   );
 }

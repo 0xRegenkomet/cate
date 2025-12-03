@@ -16,57 +16,69 @@ export default function ChartSection() {
       
       {/* Decorative divider at top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-cate-light-blue/30"></div>
+      
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="flex justify-center mb-10 md:mb-16">
           <h2 
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white relative"
             style={{
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 0 15px rgba(59, 130, 246, 0.4), 0 0 30px rgba(59, 130, 246, 0.2)',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000',
               WebkitTextStroke: '2px #000',
               paintOrder: 'stroke fill',
             }}
           >
-            <span className="relative px-6 py-2 inline-block">
-              <span className="absolute inset-0 bg-cate-light-blue/5 rounded-lg blur-lg"></span>
-              <span className="relative">Live Chart</span>
-            </span>
+            Live Chart
           </h2>
         </div>
         
         <div className="max-w-6xl mx-auto">
-          <div className="bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-6 md:p-8 lg:p-10 shadow-2xl">
-            {/* Placeholder for chart - can be integrated with Dexscreener embed or TradingView */}
-            <div className="aspect-video bg-cate-dark-blue/50 rounded-xl flex items-center justify-center border-2 border-dashed border-cate-light-blue/30">
-              <div className="text-center">
-                <div className="text-6xl mb-4">📈</div>
-                <p 
-                  className="text-white/70 text-lg"
-                  style={{
-                    textShadow: '0 1px 3px rgba(0, 0, 0, 0.6)',
-                  }}
-                >
-                  Chart coming soon
-                </p>
-                <p 
-                  className="text-white/50 text-sm mt-2"
-                  style={{
-                    textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
-                  }}
-                >
-                  Dexscreener or TradingView integration
-                </p>
-              </div>
-            </div>
+          <div className="bg-cate-dark-blue border-2 border-cate-light-blue/30 rounded-2xl p-6 md:p-8 lg:p-10 shadow-2xl relative overflow-hidden group hover:border-cate-pink/50 transition-all duration-300">
+            {/* Animated gradient border effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-cate-pink/0 via-cate-purple/0 to-cate-blue/0 group-hover:from-cate-pink/5 group-hover:via-cate-purple/5 group-hover:to-cate-blue/5 transition-all duration-500 rounded-2xl"></div>
             
-            {/* Uncomment and customize when ready to embed Dexscreener */}
-            {/* 
-            <iframe
-              src="YOUR_DEXSCREENER_EMBED_URL"
-              className="w-full h-[600px] rounded-xl"
-              frameBorder="0"
-              title="Dexscreener Chart"
-            />
-            */}
+            <div className="relative z-10">
+              {/* Placeholder for chart - can be integrated with Dexscreener embed or TradingView */}
+              <div className="aspect-video bg-cate-dark-blue/50 rounded-xl flex items-center justify-center border-2 border-dashed border-cate-light-blue/30 group-hover:border-cate-pink/50 transition-all duration-300 relative overflow-hidden">
+                {/* Animated background pattern */}
+                <div className="absolute inset-0 opacity-10">
+                  <div 
+                    className="absolute inset-0" 
+                    style={{
+                      backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(59, 130, 246, 0.1) 10px, rgba(59, 130, 246, 0.1) 20px)`,
+                    }}
+                  />
+                </div>
+                <div className="text-center relative z-10">
+                  <div className="text-6xl mb-4 animate-bounce-slow">📈</div>
+                  <p 
+                    className="text-white/70 text-lg"
+                    style={{
+                      textShadow: '0 1px 3px rgba(0, 0, 0, 0.6)',
+                    }}
+                  >
+                    Chart coming soon
+                  </p>
+                  <p 
+                    className="text-white/50 text-sm mt-2"
+                    style={{
+                      textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
+                    }}
+                  >
+                    Dexscreener or TradingView integration
+                  </p>
+                </div>
+              </div>
+              
+              {/* Uncomment and customize when ready to embed Dexscreener */}
+              {/* 
+              <iframe
+                src="YOUR_DEXSCREENER_EMBED_URL"
+                className="w-full h-[600px] rounded-xl"
+                frameBorder="0"
+                title="Dexscreener Chart"
+              />
+              */}
+            </div>
           </div>
         </div>
       </div>
